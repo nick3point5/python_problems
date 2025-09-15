@@ -34,5 +34,5 @@ if __name__ == "__main__":
 		def prime_checksum(n: int) -> int:
 				return sum(prime_generator(n))
 		
-		big_prime_test = test_runner(prime_checksum)
+		big_prime_test = test_runner(prime_checksum, timeout_seconds=10.0)
 		big_prime_test(7472966967499, 1000000)
